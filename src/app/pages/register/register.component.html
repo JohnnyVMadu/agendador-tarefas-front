@@ -21,7 +21,7 @@
             <input-password-field [control]="passwordControl"></input-password-field>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-raised-button class="full-width" (click)="submit()">Cadastrar</button>
+            <button mat-raised-button class="full-width" [disabled]="form.invalid" (click)="submit()">Cadastrar</button>
         </mat-card-actions>
     </mat-card>
 </div>
